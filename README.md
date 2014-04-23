@@ -6,15 +6,11 @@ Provide a peek into the Sidekiq workers, queued and processed jobs.
 
 Add this line to your application's Gemfile:
 
-    gem 'peek-sidekiq'
+    gem "peek-sidekiq", github: "Soliah/peek-sidekiq"
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install peek-sidekiq
 
 ## Usage
 
