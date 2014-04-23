@@ -1,6 +1,13 @@
 # Peek::Sidekiq
 
-Provide a peek into the Sidekiq workers, queued and processed jobs.
+Provide a peek into the Sidekiq workers, queued and processed jobs. It differs
+from the other [peek-sidekiq](https://github.com/suranyami/peek-sidekiq) as
+that gem doesn't work with the new versions of Sidekiq and displays different
+information.
+
+This is tested with Sidekiq 3. Versions prior to this may or may not work as
+the gem relies on the [Sidekiq
+API](https://github.com/mperham/sidekiq/wiki/API).
 
 ## Installation
 
@@ -16,9 +23,7 @@ And then execute:
 
 Add the following to your `config/initializers/peek.rb`:
 
-```ruby
-Peek.into Peek::Views::Sidekiq
-```
+```ruby Peek.into Peek::Views::Sidekiq ```
 
 ## Contributing
 
