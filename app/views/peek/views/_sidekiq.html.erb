@@ -2,4 +2,4 @@
   <span data-defer-to="<%= view.defer_key %>-workers"></span> /
   <span data-defer-to="<%= view.defer_key %>-queued"></span> /
   <span data-defer-to="<%= view.defer_key %>-processed"></span>
-</strong> sidekiq
+</strong> <%= defined?(sidekiq_web_path) ? link_to("sidekiq", sidekiq_web_path) : "sidekiq" %>
